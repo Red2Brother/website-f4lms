@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quentin Stutzmann | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+
+    <header>
+        <a href="index.html" class="logo">Quentin Stutzmann</a>
+        <nav>
+            <a href="index.html" data-key="nav_home">Accueil</a>
+            <a href="portfolio.html" class="active" data-key="nav_portfolio">Portfolio</a>
+            <a href="ham-radio.html" data-key="nav_radio">Radioamateur</a>
+            <a href="propos.html"  data-key="nav_about">À propos</a>
+            <a href="contact.html" data-key="nav_contact">Contact</a>
+        </nav>
+    </header>
+
+    <section>
+    <div class="titre-page">
+        <h1 data-key="port_edu_title">Mon Parcours Scolaire</h1>
+    </div>
+    <div class="timeline-container">
+        <div class="timeline-line"></div>
+
+        <div class="timeline-item visible">
+            <div class="timeline-year">2022-2024</div>
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+                <div class="timeline-school">Lycée des métiers et UFA Heinrich Nessel</div>
+                <div class="timeline-degree" data-key="port_bac_title">Baccalauréat Sciences et Technologies de l'industrie et du développement durable</div>
+                <p class="timeline-desc" data-key="port_bac_desc">Obtention de la licence HAREC radioamateur</p>
+                <span class="badge" data-key="port_status_admitted">Admis</span>
+            </div>
+        </div>
+
+        <div class="timeline-item visible">
+            <div class="timeline-year">2024-2026</div>
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+                <div class="timeline-school">Lycée des métiers et UFA Heinrich Nessel</div>
+                <div class="timeline-degree" data-key="port_bts_title">BTS Cybersécurité Informatique Electronique</div>
+                <p class="timeline-desc" data-key="port_bts_desc">Projet de fin d'études : participation au concours <a href="https://www.covaciel.fr/" target="_blank">covaciel</a></p>
+                <span class="badge" data-key="port_status_ongoing">En cours</span>
+            </div>
+        </div>
+    </div>
+
+    <section class="exp-section">
+        <div class="titre-page">
+            <h1 data-key="port_exp_title">Expérience Professionnelle</h1>
+        </div>
+
+        <div class="exp-container">
+            <div class="exp-line"></div>
+
+            <div class="exp-item">
+                <div class="exp-date">Juin 2022</div>
+                <div class="exp-content">
+                    <div class="exp-header">
+                        <h3 class="exp-company">Aéroport Strasbourg Entzheim</h3>
+                        <span class="badge-type" data-key="port_exp_intern">Stage</span>
+                    </div>
+                    <div class="exp-role" data-key="port_exp_role_obs">Stage d’observation</div>
+                    <p data-key="port_exp_desc_obs">Découverte des différents services aéroportuaires</p>
+                    <div class="exp-tags">
+                        <span class="exp-tag">Aéronautique</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="exp-item">
+                <div class="exp-date">Mai 2025-Juillet 2025</div>
+                <div class="exp-content">
+                    <div class="exp-header">
+                        <h3 class="exp-company">Les Grands Chais de France</h3>
+                        <span class="badge-type" data-key="port_exp_intern">Stage</span>
+                    </div>
+                    <div class="exp-role" data-key="port_exp_role_tech">Stagiaire Technicien de centre service N2</div>
+                    <p data-key="port_exp_desc_tech">Découverte des différent service aéroportuaire</p>
+                    <div class="exp-tags">
+                        <span class="exp-tag">Informatique</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="exp-item">
+                <div class="exp-date">Juillet 2025</div>
+                <div class="exp-content">
+                    <div class="exp-header">
+                        <h3 class="exp-company">Les Grands Chais de France</h3>
+                        <span class="badge-type" data-key="port_exp_cdd">CDD</span>
+                    </div>
+                    <div class="exp-role" data-key="port_exp_role_tech">Technicien de centre service N2</div>
+                    <p data-key="port_exp_desc_tech">Support à l'utilisateur, déploiement de postes, gestion du stock</p>
+                    <div class="exp-tags">
+                        <span class="exp-tag">Informatique</span>
+                    </div>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 30px;">
+                 <a href="https://www.linkedin.com/in/quentin-stutzmann" class="linkedin-btn" target="_blank">
+                    <svg viewBox="0 0 100 100" class="linkedin-icon"><path d="M92.86,0H7.12A7.17,7.17,0,0,0,0,7.21V92.79A7.17,7.17,0,0,0,7.12,100H92.86A7.19,7.19,0,0,0,100,92.79V7.21A7.19,7.19,0,0,0,92.86,0ZM30.22,85.71H15.4V38H30.25V85.71ZM22.81,31.47a8.59,8.59,0,1,1,8.6-8.59A8.6,8.6,0,0,1,22.81,31.47Zm63,54.24H71V62.5c0-5.54-.11-12.66-7.7-12.66s-8.91,6-8.91,12.26V85.71H39.53V38H53.75v6.52H54c2-3.75,6.83-7.7,14-7.7,15,0,17.79,9.89,17.79,22.74Z"></path></svg>
+                    <span class="linkedin-text">Quentin Stutzmann</span>
+                </a>
+            </div>
+        </div>
+    </section> 
+
+    <div class="titre-page">
+        <h1 data-key="port_real_title">Mes Réalisations</h1>
+    </div>
+
+    <div class="portfolio-grid">
+        <div class="projet-carte">
+            <div class="projet-image"><img src="/Images/imageprojet1.png" alt="Mon projet"></div>
+            <div class="projet-contenu">
+                <div class="projet-tags">HTML / CSS / JS</div>
+                <h3 class="projet-titre">Skymaphub</h3>
+                <p class="projet-desc" data-key="port_proj_sky_desc">Creation site web pour la recherche de carte pour le vol simulateur ou réel</p>
+                <a href="https://skymapmub.neocities.org/" class="btn-outline" data-key="port_proj_btn">Voir le projet</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <footer>
+        <p>&copy; 2026 Quentin Stutzmann. Tous droits réservés.</p>
+    </footer>
+</div>
+</body>
+</html>

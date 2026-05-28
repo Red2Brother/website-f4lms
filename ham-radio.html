@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radioamateur - Quentin Stutzmann</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <a href="index.html" class="logo">Quentin Stutzmann</a>
+        <nav>
+            <a href="index.html" data-key="nav_home">Accueil</a>
+            <a href="portfolio.html" data-key="nav_portfolio">Portfolio</a>
+            <a href="ham-radio.html" class="active" data-key="nav_radio">Radioamateur</a>
+            <a href="propos.html" data-key="nav_about">À propos</a>
+            <a href="contact.html" data-key="nav_contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="radio-hero">
+        <div class="radio-hero-inner">
+            <div>
+                <span class="indicatif-badge">Indicatif F4LMS</span>
+                <h2>Radioamateur</h2>
+                <p>Titulaire de la licence HAREC, je suis passionné par les communications radio sous toutes leurs formes : HF, VHF/UHF, modes numériques, et expérimentation d'antennes.</p>
+                <p>La radio amateur me permet de combiner ma passion pour l'électronique, l'informatique et la communication à l'échelle mondiale - parfois sans aucune infrastructure intermédiaire.</p>
+
+                <div class="club-card">
+                    <a href="https://www.f5kav.fr" target="_blank">
+                        <img src="Images/f5kav-logo.jpeg" alt="Logo F5KAV"> 
+                    </a>
+                    <div class="club-card-info">
+                        <h4>Club F5KAV</h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="radio-photo-wrapper">
+                <img src="Images/ham-radio.jpg" alt="Ma station radioamateur" onerror="this.style.opacity='0.3'; this.alt='Photo à venir';">
+            </div>
+        </div>
+    </section>
+
+    <section class="materiel-section">
+        <h2>Mon Matériel</h2>
+        <div class="materiel-grid">
+
+            <div class="materiel-carte">
+                <span class="mat-icon"><i class="fa-solid fa-radio"></i></span>
+                <h3>Émetteur-récepteur HF</h3>
+                <div class="mat-model">Icom IC-7300</div>
+                <p>Référence incontournable avec son processeur SDR. Je l'utilise principalement pour la chasse aux DX sur les bandes décamétriques et l'expérimentation des modes numériques.</p>
+            </div>
+
+            <div class="materiel-carte">
+                <span class="mat-icon"><i class="fa-solid fa-tower-broadcast"></i></span>
+                <h3>Antennes HF</h3>
+                <div class="mat-model">JPC-12 </div>
+                <p>Verticale facile d'installation et de réglage.</p>
+                <div class="mat-model">End Fed </div>
+                <p>Antenne filaire alimentée en extrémité avec balun 49:1 pour le 80m </p>
+            </div>
+
+            <div class="materiel-carte">
+                <span class="mat-icon"><i class="fa-solid fa-walkie-talkie"></i></span>
+                <h3>Portables VHF/UHF</h3>
+                <div class="mat-model">Icom ID-50</div>
+                <p>Utilisés pour le trafic via relais locaux et le mode numérique D-STAR.</p>
+                <div class="mat-model">Baofeng UV-5R</div>
+                <p> Me sert d'outil robuste pour les activités de terrain et les tests rapides</p>
+            </div>
+
+            <div class="materiel-carte">
+                <span class="mat-icon"><i class="fa-solid fa-location-dot"></i></span>
+                <h3>Géolocalisation & APRS</h3>
+                <div class="mat-model">Tracker APRS</div>
+                <p>Utilisation du protocole APRS pour le suivi de position en temps réel. Vous pouvez retrouver les détails de mon installation sur le site du club : 
+                   <a href="https://www.f5kav.fr/articles/aprs" target="_blank" style="color: #007bff; text-decoration: underline;">Projet APRS F5KAV</a>.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="clublog-section">
+        <h2>Mon Journal de Trafic</h2>
+        <p class="subtitle">Retrouvez tous mes QSO enregistrés via ClubLog (indicatif F4LMS).</p>
+        <div class="clublog-wrapper">
+            <iframe
+                name="iframe"
+                src="https://clublog.org/logsearch.php?log=F4LMS&iframe=1"
+                width="100%"
+                height="200"
+                scrolling="yes"
+                align="top"
+                frameborder="0">
+            </iframe>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Quentin Stutzmann. Tous droits réservés.</p>
+    </footer>
+
+    <script src="script.js" charset="utf-8"></script>
+</body>
+</html>
