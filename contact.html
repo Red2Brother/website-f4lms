@@ -31,79 +31,194 @@
                 <h3>Restons en contact</h3>
                 <p>Que ce soit pour une opportunit&eacute; professionnelle, un projet collaboratif, ou simplement pour &eacute;changer sur la radio et l'informatique - n'h&eacute;sitez pas !</p>
 
-                <div class="contact-links">
-                    <a href="https://www.linkedin.com/in/quentin-stutzmann" target="_blank" class="contact-link-item">
-                        <div class="contact-icon">
+                <div class="social-btns">
+
+                    <a href="https://www.linkedin.com/in/quentin-stutzmann" target="_blank" class="social-pill" style="--pill-color:#0a66c2;">
+                        <span class="social-pill__icon">
                             <svg viewBox="0 0 100 100"><path d="M92.86,0H7.12A7.17,7.17,0,0,0,0,7.21V92.79A7.17,7.17,0,0,0,7.12,100H92.86A7.19,7.19,0,0,0,100,92.79V7.21A7.19,7.19,0,0,0,92.86,0ZM30.22,85.71H15.4V38H30.25V85.71ZM22.81,31.47a8.59,8.59,0,1,1,8.6-8.59A8.6,8.6,0,0,1,22.81,31.47Zm63,54.24H71V62.5c0-5.54-.11-12.66-7.7-12.66s-8.91,6-8.91,12.26V85.71H39.53V38H53.75v6.52H54c2-3.75,6.83-7.7,14-7.7,15,0,17.79,9.89,17.79,22.74Z"/></svg>
-                        </div>
-                        <div>
-                            <span class="clink-label">LinkedIn</span>
-                            <span class="clink-value">Quentin Stutzmann</span>
-                        </div>
+                        </span>
+                        <span class="social-pill__label">LinkedIn</span>
                     </a>
 
-                    <a href="https://www.f5kav.fr" target="_blank" class="contact-link-item">
-                        <div class="contact-icon contact-icon-emoji">📻</div>
-                        <div>
-                            <span class="clink-label">Radioamateur</span>
-                            <span class="clink-value">F4LMS — Club F5KAV</span>
-                        </div>
+                    <a href="https://github.com/Red2Brother" target="_blank" class="social-pill" style="--pill-color:#333;">
+                        <span class="social-pill__icon">
+                            <svg viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                        </span>
+                        <span class="social-pill__label">GitHub</span>
                     </a>
 
-                    <a href="CV Quentin Stutzmann.pdf" class="contact-link-item">
-                        <div class="contact-icon contact-icon-emoji">📄</div>
-                        <div>
-                            <span class="clink-label">Curriculum Vitae</span>
-                            <span class="clink-value">Télécharger mon CV</span>
-                        </div>
+                    <a href="https://www.f5kav.fr" target="_blank" class="social-pill" style="--pill-color:#b45309;">
+                        <span class="social-pill__icon social-pill__icon--emoji">📻</span>
+                        <span class="social-pill__label">F4LMS — F5KAV</span>
                     </a>
+
+                    <a href="CV Quentin Stutzmann.pdf" class="social-pill" style="--pill-color:#4f46e5;">
+                        <span class="social-pill__icon social-pill__icon--emoji">📄</span>
+                        <span class="social-pill__label">Curriculum Vitae</span>
+                    </a>
+
                 </div>
             </div>
 
-            <div class="form-container">
-                <div id="form-message" style="display: none; padding: 15px; margin-bottom: 20px; border-radius: 8px; font-size: 0.95rem;"></div>
-
-                <form class="form contact-form" action="contact.php" method="POST" id="contactForm">
-                    <div class="flex">
-                        <label>
-                            <input required placeholder=" " type="text" name="prenom" class="input">
-                            <span>Prénom</span>
-                        </label>
-                        <label>
-                            <input required placeholder=" " type="text" name="nom" class="input">
-                            <span>Nom</span>
-                        </label>
-                    </div>
-
-                    <label>
-                        <input required placeholder=" " type="email" name="email" class="input">
-                        <span>Adresse e-mail</span>
-                    </label>
-
-                    <label>
-                        <input required placeholder=" " type="text" name="sujet" class="input">
-                        <span>Sujet</span>
-                    </label>
-
-                    <label>
-                        <textarea required rows="5" placeholder=" " name="message" class="input"></textarea>
-                        <span>Message</span>
-                    </label>
-
-                    <input type="text" name="_gotcha" style="display:none">
-                    <input type="hidden" name="_subject" value="Nouveau message depuis votre portfolio">
-
-                    <button type="submit" class="fancy">
-                        <span class="top-key"></span>
-                        <span class="text">Envoyer le message</span>
-                        <span class="bottom-key-1"></span>
-                        <span class="bottom-key-2"></span>
-                    </button>
-
-                    <p class="form-note">Votre message sera envoyé directement sur mon serveur Nginx.</p>
-                </form>
+            <!-- Bloc mailto -->
+            <div class="mailto-wrapper">
+                <div class="mailto-envelope" aria-hidden="true">
+                    <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="4" y="12" width="56" height="40" rx="4" ry="4"/>
+                        <polyline points="4,12 32,38 60,12"/>
+                    </svg>
+                </div>
+                <h3>Envoyez-moi un e-mail</h3>
+                <p>Que ce soit une question, une opportunité ou juste un bonjour — ma boîte est ouverte.</p>
+                <a href="mailto:qstutzmann67@gmail.com" class="mailto-btn">
+                    <svg viewBox="0 0 24 24"><path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/></svg>
+                    Écrire un message
+                </a>
+                <p class="mailto-address">qstutzmann67@gmail.com</p>
             </div>
+
         </div>
+
+        <style>
+            /* ---- Boutons sociaux en pilule expansible ---- */
+            .social-btns {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 0.75rem;
+                margin-top: 0.5rem;
+            }
+
+            .social-pill {
+                display: inline-flex;
+                align-items: center;
+                height: 46px;
+                width: 46px;
+                background-color: var(--pill-color, #333);
+                border-radius: 23px;
+                overflow: hidden;
+                text-decoration: none;
+                transition: width 0.35s cubic-bezier(0.4,0,0.2,1), box-shadow 0.25s;
+                box-shadow: 0 2px 10px rgba(0,0,0,0.35);
+                white-space: nowrap;
+                flex-shrink: 0;
+            }
+
+            .social-pill:hover {
+                width: 180px;
+                box-shadow: 0 4px 20px rgba(0,0,0,0.45);
+            }
+
+            .social-pill:active { transform: translate(1px, 1px); }
+
+            .social-pill__icon {
+                width: 46px;
+                height: 46px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-shrink: 0;
+            }
+
+            .social-pill__icon svg {
+                width: 22px;
+                height: 22px;
+                fill: #fff;
+            }
+
+            .social-pill__icon--emoji {
+                font-size: 1.25rem;
+            }
+
+            .social-pill__label {
+                color: #fff;
+                font-size: 0.88rem;
+                font-weight: 600;
+                padding-right: 1rem;
+                opacity: 0;
+                transform: translateX(-6px);
+                transition: opacity 0.2s 0.1s, transform 0.2s 0.1s;
+                pointer-events: none;
+            }
+
+            .social-pill:hover .social-pill__label {
+                opacity: 1;
+                transform: translateX(0);
+            }
+
+            /* ---- Bloc mailto ---- */
+            .mailto-wrapper {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 0.75rem;
+                background: var(--fond-elevated);
+                border: 1px solid var(--bordure);
+                border-radius: 14px;
+                padding: 2.5rem 2rem;
+                transition: border-color 0.25s;
+            }
+
+            .mailto-wrapper:hover { border-color: var(--primaire-dark); }
+
+            .mailto-envelope svg {
+                width: 52px;
+                height: 52px;
+                fill: none;
+                stroke: var(--primaire);
+                stroke-width: 2.5;
+                stroke-linejoin: round;
+                margin-bottom: 0.25rem;
+            }
+
+            .mailto-wrapper h3 {
+                font-size: 1.25rem;
+                margin: 0;
+            }
+
+            .mailto-wrapper p {
+                color: var(--texte-doux);
+                font-size: 0.93rem;
+                line-height: 1.7;
+                margin: 0;
+                max-width: 340px;
+            }
+
+            .mailto-btn {
+                display: inline-flex;
+                align-items: center;
+                gap: 0.55rem;
+                background: var(--primaire-dark);
+                color: #fff;
+                text-decoration: none;
+                font-weight: 600;
+                font-size: 0.92rem;
+                padding: 0.75rem 1.5rem;
+                border-radius: 8px;
+                margin-top: 0.5rem;
+                border: 1px solid rgba(129,140,248,0.25);
+                transition: background 0.2s, box-shadow 0.2s, transform 0.15s;
+            }
+
+            .mailto-btn:hover {
+                background: var(--primaire);
+                box-shadow: 0 0 24px var(--primaire-glow);
+                transform: translateY(-1px);
+            }
+
+            .mailto-btn svg {
+                width: 16px;
+                height: 16px;
+                fill: #fff;
+            }
+
+            .mailto-address {
+                font-size: 0.8rem;
+                color: var(--texte-subtil);
+                margin: 0;
+                font-family: monospace;
+                letter-spacing: 0.03em;
+            }
+        </style>
     </section>
 
     <footer>
